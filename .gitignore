@@ -1,0 +1,10 @@
+node_modules/
+.env
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+my_app/
+ec2-control.sh
+fix-gub
+myTOTP-scer
+.env.example

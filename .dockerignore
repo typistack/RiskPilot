@@ -1,0 +1,12 @@
+node_modules
+npm-debug.log
+.env
+.git
+.gitignore
+my_app
+Dockerfile
+compose.yml
+README.md
+API_GUIDE.md
+plan
+myTOTP-scer
