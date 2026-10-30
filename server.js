@@ -6,6 +6,7 @@ const cors = require('cors');
 const authRoutes = require('./src/routes/auth.routes');
 const profileRoutes = require('./src/routes/profile.routes');
 const superOrderRoutes = require('./src/routes/superOrder.routes');
+const marginRoutes = require('./src/routes/margin.routes');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -28,6 +29,7 @@ app.get('/api/health', (req, res) => {
 app.use('/', authRoutes);
 app.use('/', profileRoutes);
 app.use('/', superOrderRoutes);
+app.use('/', marginRoutes);
 
 // Global 404 Handler
 app.use((req, res) => {
@@ -47,6 +49,8 @@ app.listen(PORT, () => {
   console.log(` 3. Place Order : POST   http://localhost:${PORT}/v2/super/orders`);
   console.log(` 4. Get Orders  : GET    http://localhost:${PORT}/v2/super/orders`);
   console.log(` 5. Cancel Leg  : DELETE http://localhost:${PORT}/v2/super/orders/:orderId/:orderLeg`);
-  console.log(` 6. Health      : GET    http://localhost:${PORT}/api/health`);
+  console.log(` 6. Calc Margin : POST   http://localhost:${PORT}/v2/margincalculator`);
+  console.log(` 7. Fund Limits : GET    http://localhost:${PORT}/v2/fundlimit`);
+  console.log(` 8. Health      : GET    http://localhost:${PORT}/api/health`);
   console.log(`====================================================`);
 });
