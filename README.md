@@ -1,4 +1,4 @@
-# RiskPilot — Dhan Broker Backend
+# RiskPilot — Connect Broker Backend
 
 A robust, modular Node.js API bridge and middleware service for the **DhanHQ API**. It simplifies authentication by generating dynamic Time-based One-Time Passwords (TOTP), provisions 24-hour access tokens, fetches user profiles, and manages multi-leg Super Orders (Bracket Orders).
 
